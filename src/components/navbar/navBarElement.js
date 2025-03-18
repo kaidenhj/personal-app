@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
-// import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
     background: #000;
@@ -39,4 +38,3 @@ export const NavLogo = styled(LinkRouter)`
     font-weight: bold;
     text-decoration: none;
 `;
-

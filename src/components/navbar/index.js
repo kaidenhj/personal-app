@@ -1,21 +1,23 @@
 import React from 'react';
 import {Nav, NavContainer, NavLogo} from './navBarElement';
+import NavButton from '../NavButton';
 
-const Navbar = () => {
+const NavBar = () => {
     return (
         <>
             <Nav>
                 <NavContainer>
                     <NavLogo to="/">
-                        <h1>Kaidrouen Jones</h1>
+                        <h1>Kaiden Jones</h1>
                     </NavLogo>
+                    <NavButton />
                 </NavContainer>
             </Nav>
         </>
     );
 };
 
-export default Navbar;
+export default NavBar;
 
 
 
