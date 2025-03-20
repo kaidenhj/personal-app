@@ -5,10 +5,10 @@ import { Button } from "../ButtonElement";
 
 const HeroSection = () => {
 
-    const [hover, setHover] = useState(false)
+    const [hover, setHover] = useState(false);
 
     const onHover = () => {
-        setHover(!hover)
+        setHover(!hover);
     };
 
     return (
@@ -27,13 +27,13 @@ const HeroSection = () => {
                 My goal is to use my technical skills to bridge these passions and make a meaningful impact in my career.
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to='/thing' onMouseEnter={onHover} onMouseLeave={onHover}>
+                    <Button to='/thing' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
                         Learn more {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>
-    )
-}
-
+    );
+};
+ 
 export default HeroSection;

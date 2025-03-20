@@ -12,11 +12,11 @@ const Home = () => {
 
     return (
         <>
-            <Sidebar isopen={isOpen} toggle={toggle} />
+            <Sidebar isOpen={isOpen} toggle={toggle} />
             <NavBar toggle={toggle} />
-            <HeroSection />
+            <HeroSection/>
         </>
     )
 };
-
+ 
 export default Home;

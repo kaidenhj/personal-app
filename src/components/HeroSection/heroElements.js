@@ -13,7 +13,7 @@ export const HeroContainer = styled.div`
     z-index: 1;
 
 `
-
+ 
 export const HeroBg = styled.div`
     position: absolute;
     top: 0;
