@@ -19,9 +19,6 @@ const NavButton = ({toggle}) => {
                     <NavLinks to="achievments">Achievments</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <NavLinks to="coding">Coding</NavLinks>
-                </NavItem>
-                <NavItem>
                     <NavLinks to="projects">Projects</NavLinks>
                 </NavItem>
                 <NavItem>
