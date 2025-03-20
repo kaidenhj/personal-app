@@ -1,27 +1,32 @@
 import React from "react";
 import { Button } from '../ButtonElement'
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, SubTitle, BtnWrap, ImgWrap, Img
- } from "./aboutElements";
+ } from "./tileElements";
 
-const InfoSection = () => {
+
+const TileSection = ({
+    lightBg, id, img, imgStart, topLine, 
+    lightText, headline, darkText, 
+    description, buttonLabel, alt
+}) => {
     return (
         <div>
-            <InfoContainer>
+            <InfoContainer lightBg={lightBg} id={id}>
                 <InfoWrapper>
-                    <InfoRow>
+                    <InfoRow imgStart={imgStart}>
                         <Column1>
                         <TextWrapper>
-                            <TopLine>Top Line</TopLine>
-                            <Heading>Heading </Heading>
-                            <SubTitle>Subtitle</SubTitle>
+                            <TopLine>{topLine}</TopLine>
+                            <Heading lightText={lightText}>{headline}</Heading>
+                            <SubTitle darkText={darkText}>{description}</SubTitle>
                             <BtnWrap>
-                                <Button to='about' />
+                                <Button to='about' >{buttonLabel}</Button>
                             </BtnWrap>
                         </TextWrapper>
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                                <Img/>
+                                <Img src={img} alt={alt} />
                             </ImgWrap>
                         </Column2>
                     </InfoRow>
@@ -32,4 +37,4 @@ const InfoSection = () => {
     );
 };
 
-export default InfoSection;
+export default TileSection;

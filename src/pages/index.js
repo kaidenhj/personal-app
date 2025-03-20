@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import Sidebar from "../components/Sidebar";
 import NavBar from "../components/NavBar";
 import HeroSection from "../components/HeroSection";
-import InfoSection from "../components/AboutSection";
+import TileSection from "../components/tileSection";
+import { homeObjOne } from "../components/tileSection/Data"
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -16,7 +17,7 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <NavBar toggle={toggle} />
             <HeroSection/>
-            <InfoSection />
+            <TileSection {...homeObjOne}/>
         </>
     )
 };
