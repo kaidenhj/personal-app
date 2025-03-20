@@ -35,6 +35,9 @@ export const NavLogo = styled(LinkRouter)`
     display: flex;
     align-items: center;
     margin-left: 25px;
-    font-weight: bold;
     text-decoration: none;
+
+    &:hover {
+        font-size: 1.52rem;
+    }
 `;

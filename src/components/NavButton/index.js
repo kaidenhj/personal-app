@@ -1,13 +1,11 @@
 import React from 'react';
 import {MobileIcon, NavMenu, NavItem, NavLinks} from './navButtonElement';
 import { FaBars } from 'react-icons/fa6';
-// import handleOpen from '.navModel/navModelElement';
 
-const NavButton = () => {
+const NavButton = ({toggle}) => {
     return (
         <>
-            {/* <Button onClick={handleOpen}> */}
-            <MobileIcon>
+            <MobileIcon onClick={toggle}>
                 <FaBars />
             </MobileIcon>
             <NavMenu>
