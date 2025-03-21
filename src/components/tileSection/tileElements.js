@@ -28,12 +28,14 @@ export const InfoWrapper = styled.div`
 
 export const InfoRow = styled.div`
     display: grid;
-    grid-auto-columns: minmax(auto, 1fr);
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
-    @media screen and (max-width: 768px) {
-        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1'` : `'col2'`)}; 
+    @media screen and (max-width: 768px) {    
+        grid-template-areas: 
+            'col1'
+            'col2'; 
         grid-template-columns: 1fr;
     }
 `

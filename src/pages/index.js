@@ -3,7 +3,8 @@ import Sidebar from "../components/Sidebar";
 import NavBar from "../components/NavBar";
 import HeroSection from "../components/HeroSection";
 import TileSection from "../components/tileSection";
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from "../components/tileSection/Data"
+import { homeObjOne, homeObjTwo, homeObjFour } from "../components/tileSection/Data"
+import Projects from "../components/Projects";
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -19,7 +20,8 @@ const Home = () => {
             <HeroSection/>
             <TileSection {...homeObjOne}/>
             <TileSection {...homeObjTwo}/>
-            <TileSection {...homeObjThree}/>
+            <Projects/>
+            {/* <TileSection {...homeObjThree}/> */}
             <TileSection {...homeObjFour}/>
         </>
     )
