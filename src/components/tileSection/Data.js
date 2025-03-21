@@ -18,19 +18,19 @@ export const homeObjOne = {
 
 export const homeObjTwo = {
     id: 'achievments',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
     topLine: 'Achievments',
     headline: 'Head Line',
     description: 'description',
     buttonLabel: 'label',
-    imgStart: false,
+    imgStart: true,
     img: require('../../images/img-2.svg').default,
     alt: 'People sitting on text boxes',
-    dark: true,
-    primary: true,
-    darkText: false
+    dark: false,
+    primary: false,
+    darkText: true
 };
 
 export const homeObjThree = {
@@ -52,17 +52,17 @@ export const homeObjThree = {
 
 export const homeObjFour = {
     id: 'contact',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
     topLine: 'Contact',
     headline: 'Head Line',
     description: 'description',
     buttonLabel: 'label',
-    imgStart: false,
+    imgStart: true,
     img: require('../../images/img-1.svg').default,
     alt: 'People sitting on text boxes',
-    dark: true,
-    primary: true,
-    darkText: false
+    dark: false,
+    primary: false,
+    darkText: true
 };

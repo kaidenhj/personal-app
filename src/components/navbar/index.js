@@ -7,7 +7,7 @@ const NavBar = () => {
         <>
             <Nav>
                 <NavContainer>
-                    <NavLogo to="/">
+                    <NavLogo to="home">
                         <h1>Kaiden Jones</h1>
                     </NavLogo>
                     <NavButton />
