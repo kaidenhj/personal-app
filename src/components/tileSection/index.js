@@ -7,7 +7,7 @@ import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, Top
 const TileSection = ({
     lightBg, id, img, imgStart, topLine, 
     lightText, headline, darkText, 
-    description, buttonLabel, alt
+    description, buttonLabel, alt, primary, dark, dark2
 }) => {
     return (
         <div>
@@ -20,7 +20,7 @@ const TileSection = ({
                             <Heading lightText={lightText}>{headline}</Heading>
                             <SubTitle darkText={darkText}>{description}</SubTitle>
                             <BtnWrap>
-                                <Button to='about' >{buttonLabel}</Button>
+                                <Button to='about' smooth={true} duration={500} spy={true} exact="true" offset={-80} primary={primary ? 1:0} dark={dark ? 1:0} dark2={dark2 ? 1:0}>{buttonLabel}</Button>
                             </BtnWrap>
                         </TextWrapper>
                         </Column1>
