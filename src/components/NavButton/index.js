@@ -17,6 +17,13 @@ const NavButton = ({toggle}) => {
         
         console.log("after toggle");
     };
+    
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
         <>
@@ -28,19 +35,19 @@ const NavButton = ({toggle}) => {
             </MobileIcon>
             <NavMenu>
                 <NavItem>
-                    <NavLinks to="home">Home</NavLinks>
+                    <NavLinks onClick={() => scrollToSection('home')}>Home</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <NavLinks to="about">About</NavLinks>
+                    <NavLinks onClick={() => scrollToSection('about')}>About</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <NavLinks to="achievments">Achievments</NavLinks>
+                    <NavLinks onClick={() => scrollToSection('achievments')}>Achievments</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <NavLinks to="projects">Projects</NavLinks>
+                    <NavLinks onClick={() => scrollToSection('projects')}>Projects</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <NavLinks to="contact">Contact</NavLinks>
+                    <NavLinks onClick={() => scrollToSection('contact')}>Contact</NavLinks>
                 </NavItem>
             </NavMenu>
         </>

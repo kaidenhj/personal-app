@@ -5,29 +5,14 @@ import HeroSection from "../components/HeroSection";
 import TileSection from "../components/tileSection";
 import { homeObjOne, homeObjTwo, homeObjFour } from "../components/tileSection/Data"
 import Projects from "../components/Projects";
+import Footer from "../components/Footer";
 
 const Home = () => {
-
-    // const [isOpen, setIsOpen] = useState(false);
-
-    // const toggle = () => {
-    //     console.log("Sidebar toggle clicked! Before:", isOpen);
-    //     setIsOpen(prevState => {
-    //         console.log("Toggling to:", !prevState);
-    //         return !prevState;
-    //     });
-    // };
-
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
         setIsOpen(!isOpen)
     }
-
-    // const toggle = () => {
-    //     setIsOpen(prevState => !prevState);
-    // };
-
 
     return (
         <>
@@ -39,6 +24,7 @@ const Home = () => {
             <Projects/>
             {/* <TileSection {...homeObjThree}/> */}
             <TileSection {...homeObjFour}/>
+            <Footer/>
         </>
     )
 };
