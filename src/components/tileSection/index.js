@@ -10,7 +10,6 @@ const TileSection = ({
     description, buttonLabel, alt, primary, dark, dark2
 }) => {
     return (
-        <div>
             <InfoContainer lightBg={lightBg} id={id}>
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
@@ -33,7 +32,6 @@ const TileSection = ({
                 </InfoWrapper>
 
             </InfoContainer>
-        </div>
     );
 };
 

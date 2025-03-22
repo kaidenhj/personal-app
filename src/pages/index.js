@@ -7,11 +7,27 @@ import { homeObjOne, homeObjTwo, homeObjFour } from "../components/tileSection/D
 import Projects from "../components/Projects";
 
 const Home = () => {
-    const [isOpen, setIsOpen] = useState(false)
+
+    // const [isOpen, setIsOpen] = useState(false);
+
+    // const toggle = () => {
+    //     console.log("Sidebar toggle clicked! Before:", isOpen);
+    //     setIsOpen(prevState => {
+    //         console.log("Toggling to:", !prevState);
+    //         return !prevState;
+    //     });
+    // };
+
+    const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
         setIsOpen(!isOpen)
     }
+
+    // const toggle = () => {
+    //     setIsOpen(prevState => !prevState);
+    // };
+
 
     return (
         <>

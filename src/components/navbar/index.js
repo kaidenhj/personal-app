@@ -2,7 +2,7 @@ import React from 'react';
 import {Nav, NavContainer, NavLogo} from './navBarElement';
 import NavButton from '../NavButton';
 
-const NavBar = () => {
+const NavBar = ({toggle}) => {
     return (
         <>
             <Nav>
@@ -10,7 +10,7 @@ const NavBar = () => {
                     <NavLogo to="home">
                         <h1>Kaiden Jones</h1>
                     </NavLogo>
-                    <NavButton />
+                    <NavButton toggle={toggle} />
                 </NavContainer>
             </Nav>
         </>
@@ -18,6 +18,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-
 
