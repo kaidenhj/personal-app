@@ -1,5 +1,5 @@
 import React from 'react';
-import {Nav, NavContainer, NavLogo} from './navBarElement';
+import {Nav, NavContainer, NavLogo, NavSignin, NavBtnLink} from './navBarElement';
 import NavButton from '../NavButton';
 
 const NavBar = ({toggle}) => {
@@ -11,6 +11,9 @@ const NavBar = ({toggle}) => {
                         <h1>Kaiden Jones</h1>
                     </NavLogo>
                     <NavButton toggle={toggle} />
+                    <NavSignin>
+                        <NavBtnLink to='/thing'>Ex. Route</NavBtnLink>
+                    </NavSignin>
                 </NavContainer>
             </Nav>
         </>

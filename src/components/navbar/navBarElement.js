@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-// import { Link as LinkRouter } from 'react-router-dom';
+import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
@@ -40,5 +40,30 @@ export const NavLogo = styled(LinkScroll)`
 
     &:hover {
         font-size: 1.52rem;
+    }
+`;
+
+export const NavSignin = styled.div`
+    display: flex;
+    align-items: center;
+`;
+
+export const NavBtnLink = styled(LinkRouter)`
+    border-radius: 50px;
+    background: #01bf71;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
     }
 `;

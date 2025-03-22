@@ -6,7 +6,7 @@ import Icon3 from "../../images/img-5.svg";
 
 const Projects = () => {
     return (
-        <ProjectContainer>
+        <ProjectContainer id="projects">
             <ProjectsH1>Projects</ProjectsH1>
             <ProjectsWrapper>
                 <ProjectCard>
