@@ -1,6 +1,6 @@
 import React from "react";
 
-const Thing = () => {
+const ExRoute = () => {
   return (
     <div>
       <h1>Routing Page</h1>
@@ -9,4 +9,4 @@ const Thing = () => {
 }
 
 
-export default Thing;
+export default ExRoute;

@@ -66,4 +66,8 @@ export const NavBtnLink = styled(LinkRouter)`
         background: #fff;
         color: #010606;
     }
+
+    @media screen and (max-width: 768px){
+        display: none;
+    }
 `;

@@ -12,7 +12,7 @@ const NavBar = ({toggle}) => {
                     </NavLogo>
                     <NavButton toggle={toggle} />
                     <NavSignin>
-                        <NavBtnLink to='/thing'>Ex. Route</NavBtnLink>
+                        <NavBtnLink to='/exRoute'>Ex. Route</NavBtnLink>
                     </NavSignin>
                 </NavContainer>
             </Nav>

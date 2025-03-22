@@ -19,7 +19,7 @@ const Sidebar = ({isOpen, toggle}) => {
                         <SidebarLink to='contact' onClick={toggle}>Contact</SidebarLink>
                     </SidebarMenu>
                     <SidebtnWrap>
-                        <SidebarRoute to='/thing'>Ex. Route</SidebarRoute>
+                        <SidebarRoute to='/exRoute'>Ex. Route</SidebarRoute>
                     </SidebtnWrap>
                 </SidebarWrapper>
             </SidebarContainer>
