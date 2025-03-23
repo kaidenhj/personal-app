@@ -1,21 +1,34 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {MobileIcon, NavMenu, NavItem, NavLinks} from './navButtonElement';
 import { FaBars } from 'react-icons/fa6';
 
 const NavButton = ({toggle}) => {
 
+    const [activeSection, setActiveSection] = useState('');
+
+    useEffect(() => {
+        const sections = document.querySelectorAll('#home, #about, #achievments, #projects, #contact');
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id);
+                    }
+                });
+            },
+            { threshold: 0.8 }
+        );
+
+        sections.forEach((section) => observer.observe(section));
+
+        return () => {
+            sections.forEach((section) => observer.unobserve(section));
+        };
+    }, []);
+
     const handleToggle = () => {
-        console.log("Sidebar toggle clicked!");
-        console.log("before toggle");
-        
-        if (toggle) {
-            console.log("Calling toggle function");
             toggle();
-        } else {
-            console.log("Toggle function is not defined");
-        }
-        
-        console.log("after toggle");
     };
     
     const scrollToSection = (id) => {
@@ -28,26 +41,25 @@ const NavButton = ({toggle}) => {
     return (
         <>
             <MobileIcon onClick={() => { 
-                console.log("MobileIcon clicked!");
                 handleToggle();
             }}>
                 <FaBars />
             </MobileIcon>
             <NavMenu>
                 <NavItem>
-                    <NavLinks onClick={() => scrollToSection('home')}>Home</NavLinks>
+                    <NavLinks active={activeSection === 'home'} onClick={() => scrollToSection('home')}>Home</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <NavLinks onClick={() => scrollToSection('about')}>About</NavLinks>
+                    <NavLinks active={activeSection === 'about'} onClick={() => scrollToSection('about')}>About</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <NavLinks onClick={() => scrollToSection('achievments')}>Achievments</NavLinks>
+                    <NavLinks active={activeSection === 'achievments'} onClick={() => scrollToSection('achievments')}>Achievments</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <NavLinks onClick={() => scrollToSection('projects')}>Projects</NavLinks>
+                    <NavLinks active={activeSection === 'projects'} onClick={() => scrollToSection('projects')}>Projects</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <NavLinks onClick={() => scrollToSection('contact')}>Contact</NavLinks>
+                    <NavLinks active={activeSection === 'contact'} onClick={() => scrollToSection('contact')}>Contact</NavLinks>
                 </NavItem>
             </NavMenu>
         </>

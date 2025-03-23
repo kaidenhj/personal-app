@@ -3,8 +3,6 @@ import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarLink, Sidebar
 
 
 const Sidebar = ({isOpen, toggle}) => {
-    console.log("Sidebar isOpen:", isOpen);
-
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle} >
             <Icon onClick={toggle} >

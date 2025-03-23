@@ -18,12 +18,12 @@ const Home = () => {
         <>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <NavBar toggle={toggle} />
-            <HeroSection/>
-            <TileSection {...homeObjOne}/>
-            <TileSection {...homeObjTwo}/>
-            <Projects/>
+            <HeroSection id='home' />
+            <TileSection id='about' {...homeObjOne}/>
+            <TileSection id='achievments' {...homeObjTwo}/>
+            <Projects id='projects' />
             {/* <TileSection {...homeObjThree}/> */}
-            <TileSection {...homeObjFour}/>
+            <TileSection id='contact' {...homeObjFour}/>
             <Footer/>
         </>
     )

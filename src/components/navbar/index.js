@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Nav, NavContainer, NavLogo, NavSignin, NavBtnLink } from './navBarElement';
-import NavButton from '../NavButton';
+import NavButton from '../NavButton'; 
 
 const NavBar = ({ toggle }) => {
     const [scrollOpacity, setScrollOpacity] = useState(0);

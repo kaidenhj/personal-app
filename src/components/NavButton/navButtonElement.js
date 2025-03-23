@@ -50,10 +50,10 @@ export const NavLinks = styled(LinkScroll)`
         font-weight: bold;
     };
 
-    &:active {
+    ${({ active }) => active && `
         border-bottom: 3px solid #01bf71;
         font-weight: bold;
-    };
+    `}
 `;
 
 
