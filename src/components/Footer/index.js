@@ -48,7 +48,7 @@ const Footer = () => {
                     </FooterLinksContainer>
                     <SocialMedia>
                         <SocialMediaWrap>
-                            <SocialLogo to='home'>Kaiden Jones</SocialLogo>
+                            <SocialLogo onClick={() => scrollToSection('achievments')}>Kaiden Jones</SocialLogo>
                             <WebsiteRights>Kaiden Jones © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                             <SocialIcons>
                                 <SocialIconLink href='https://www.linkedin.com/in/kaiden-jones-16888b2b2/' target='_blank' aria-label='LinkedIn'>

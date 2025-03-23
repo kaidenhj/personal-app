@@ -33,23 +33,6 @@ export const homeObjTwo = {
     darkText: true
 };
 
-// export const homeObjThree = {
-//     id: 'projects',
-//     lightBg: false,
-//     lightText: true,
-//     lightTextDesc: true,
-//     topLine: 'Projects',
-//     headline: 'Head Line',
-//     description: 'description',
-//     buttonLabel: 'label',
-//     imgStart: false,
-//     img: require('../../images/img-5.svg').default,
-//     alt: 'People sitting on text boxes',
-//     dark: true,
-//     primary: true,
-//     darkText: false
-// };
-
 export const homeObjFour = {
     id: 'contact',
     lightBg: true,
@@ -66,3 +49,7 @@ export const homeObjFour = {
     primary: false,
     darkText: true
 };
+
+
+
+

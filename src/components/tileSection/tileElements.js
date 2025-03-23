@@ -37,10 +37,7 @@ export const InfoRow = styled.div`
             'col1'
             'col2'; 
         grid-template-columns: 1fr;
-    }
-`
-        // grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col2 col1'`)};
-
+    }`
 
 export const Column1 = styled.div`
     margin-bottom: 15px;
