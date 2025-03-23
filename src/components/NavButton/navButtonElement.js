@@ -42,7 +42,7 @@ export const NavLinks = styled(LinkScroll)`
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
-    height: 100px;
+    height: 80px;
     cursor: pointer;
  
     &:hover {
