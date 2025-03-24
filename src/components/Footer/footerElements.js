@@ -63,7 +63,7 @@ export const FooterInternalLink = styled(LinkScroll)`
     cursor: pointer;
 
     &:hover{
-        color: #01bf71;
+        color: #63d2ff;
         transition: 0.3s ease-out;
     }
 `;
@@ -76,7 +76,7 @@ export const FooterInternalRoute = styled(LinkRouter)`
     cursor: pointer;
 
     &:hover{
-        color: #01bf71;
+        color: #63d2ff;
         transition: 0.3s ease-out;
     }
 `;
@@ -89,7 +89,7 @@ export const FooterExternalLink = styled.a`
     cursor: pointer;
 
     &:hover{
-        color: #01bf71;
+        color: #63d2ff;
         transition: 0.3s ease-out;
     }
 `;

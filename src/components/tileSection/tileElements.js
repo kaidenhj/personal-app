@@ -9,7 +9,7 @@ export const InfoContainer = styled.div`
         padding: 100px 0;
     }
 `
-
+ 
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
@@ -68,11 +68,11 @@ export const TextWrapper = styled.div`
 `
 
 export const Heading = styled.h1`
+    color: #63d2ff;
     margin-bottom: 24px;
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
-    color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
 
     @media screen and (max-width: 480px) {
         font-size: 32px; // Smaller font for smaller screens
@@ -80,6 +80,7 @@ export const Heading = styled.h1`
 `
 
 export const SubTitle = styled.p`
+    white-space: pre-line;
     max-width: 440px;
     margin-bottom: 35px;
     font-size: 18px;
@@ -91,19 +92,6 @@ export const SubTitle = styled.p`
     }
 `
 
-export const TopLine = styled.p`
-    color: #01bf71;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-
-    @media screen and (max-width: 768px) {
-        font-size: 14px; // Smaller text for mobile
-    }
-`
 
 export const BtnWrap = styled.div`
     display: flex;

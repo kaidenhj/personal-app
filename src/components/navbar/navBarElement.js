@@ -53,7 +53,7 @@ export const NavSignin = styled.div`
 
 export const NavBtnLink = styled(LinkRouter)`
     border-radius: 50px;
-    background: #01bf71;
+    background: #63d2ff;
     white-space: nowrap;
     padding: 10px 22px;
     color: #010606;

@@ -51,7 +51,7 @@ export const NavLinks = styled(LinkScroll)`
     };
 
     ${({ active }) => active && `
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 3px solid #63d2ff;
         font-weight: bold;
     `}
 `;

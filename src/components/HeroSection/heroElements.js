@@ -69,7 +69,7 @@ export const HeroH1 = styled.h1`
 `
 
 export const BoldTag = styled.h1`
-    color: #01bf71;
+    color: #63d2ff;
 `
 
 export const HeroP = styled.p`

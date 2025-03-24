@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from '../ButtonElement'
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, SubTitle, BtnWrap, ImgWrap, Img
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, Heading, SubTitle, BtnWrap, ImgWrap, Img
  } from "./tileElements";
 
 
@@ -15,7 +15,6 @@ const TileSection = ({
                     <InfoRow imgStart={imgStart}>
                         <Column1>
                         <TextWrapper>
-                            <TopLine>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
                             <SubTitle darkText={darkText}>{description}</SubTitle>
                             <BtnWrap>
