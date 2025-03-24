@@ -37,7 +37,7 @@ export const ProjectsWrapper = styled.div`
 `;
 
 export const ProjectCard = styled.div`
-    background: #fff;
+    background: #f9f9f9;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -71,6 +71,7 @@ export const ProjectsH1 = styled.h1`
 `;
 
 export const ProjectH2 = styled.h2`
+    color: #f9f9f9;
     font-size: 1rem;
     margin-bottom: 10px;
 `;

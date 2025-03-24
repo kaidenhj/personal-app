@@ -35,7 +35,6 @@ const Footer = () => {
                                 <FooterInternalRoute to='/exRoute'>Ex. Route</FooterInternalRoute>
                                 <FooterInternalLink onClick={() => scrollToSection('home')}>Home</FooterInternalLink>
                                 <FooterInternalLink onClick={() => scrollToSection('about')}>About</FooterInternalLink>
-                                <FooterInternalLink onClick={() => scrollToSection('achievments')}>Achievments</FooterInternalLink>
                                 <FooterInternalLink onClick={() => scrollToSection('projects')}>Projects</FooterInternalLink>
                                 <FooterInternalLink onClick={() => scrollToSection('contact')}>Contact</FooterInternalLink>
                             </FooterLinkItems>
@@ -48,7 +47,7 @@ const Footer = () => {
                     </FooterLinksContainer>
                     <SocialMedia>
                         <SocialMediaWrap>
-                            <SocialLogo onClick={() => scrollToSection('achievments')}>Kaiden Jones</SocialLogo>
+                            <SocialLogo onClick={() => scrollToSection('home')}>Kaiden Jones</SocialLogo>
                             <WebsiteRights>Kaiden Jones © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                             <SocialIcons>
                                 <SocialIconLink href='https://www.linkedin.com/in/kaiden-jones-16888b2b2/' target='_blank' aria-label='LinkedIn'>
