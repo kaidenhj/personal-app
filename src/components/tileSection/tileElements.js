@@ -69,13 +69,14 @@ export const TextWrapper = styled.div`
 
 export const Heading = styled.h1`
     color: #63d2ff;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
+    margin-top: 24px;
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
 
     @media screen and (max-width: 480px) {
-        font-size: 32px; // Smaller font for smaller screens
+        font-size: 32px;
     }
 `
 
