@@ -30,7 +30,7 @@ const NavBar = ({ toggle }) => {
                 </NavLogo>
                 <NavButton toggle={toggle} />
                 <NavSignin>
-                    <NavBtnLink to='/exRoute'>Ex. Route</NavBtnLink>
+                    <NavBtnLink to='/resume'>Resume</NavBtnLink>
                 </NavSignin>
             </NavContainer>
         </Nav>

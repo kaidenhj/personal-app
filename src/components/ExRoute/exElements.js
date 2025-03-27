@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link as LinkR } from 'react-router-dom'
+import { Link as LinkRouter } from 'react-router-dom'
 
 export const Container = styled.div`
     min-height: 692px;
@@ -24,7 +24,7 @@ export const FormWrap = styled.div`
     }
 `
 
-export const Icon = styled(LinkR)`
+export const Icon = styled(LinkRouter)`
     position: absolute;
     top: 20px; /* Adjust this value as needed */
     left: 32px;

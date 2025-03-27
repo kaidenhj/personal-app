@@ -40,7 +40,7 @@ export const InfoRow = styled.div`
     }`
 
 export const Column1 = styled.div`
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding: 0 15px;
     grid-area: col1;
 
@@ -51,7 +51,7 @@ export const Column1 = styled.div`
 `
 
 export const Column2 = styled.div`
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding: 0 15px;
     grid-area: col2;
 
@@ -152,9 +152,10 @@ export const Text = styled.span`
 `
 
 export const FormTextArea = styled.textarea`
+    resize: none;
     padding: 16px;
     margin-bottom: 32px;
     border: none;
     border-radius: 4px;
-    height: 100px;
+    height: 120px;
 `
