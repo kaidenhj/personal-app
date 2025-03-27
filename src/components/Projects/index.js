@@ -9,20 +9,20 @@ const Projects = () => {
         <ProjectContainer id="projects">
             <ProjectsH1>Projects</ProjectsH1>
             <ProjectsWrapper>
-                <ProjectCard>
+                <ProjectCard to='/utilitiesProject'>
                     <ProjectIcon src={Icon1} />
-                    <ProjectH2>Project 1</ProjectH2>
-                    <ProjectP>Project Description</ProjectP>
+                    <ProjectH2>Utilities Database</ProjectH2>
+                    <ProjectP>Ithaca College Utilities Database System and Google Drive UI</ProjectP>
                 </ProjectCard>
-                <ProjectCard>
+                <ProjectCard to='/tameProject'>
                     <ProjectIcon src={Icon2} />
-                    <ProjectH2>Project 2</ProjectH2>
-                    <ProjectP>Project Description</ProjectP>
+                    <ProjectH2>TAME</ProjectH2>
+                    <ProjectP>Time Assessment and Managment Evaluation</ProjectP>
                 </ProjectCard>
-                <ProjectCard>
+                <ProjectCard to='/sataliteProject'>
                     <ProjectIcon src={Icon3} />
-                    <ProjectH2>Project 3</ProjectH2>
-                    <ProjectP>Project Description</ProjectP>
+                    <ProjectH2>SAM Habitat Distruction Model</ProjectH2>
+                    <ProjectP>Tracking Suburban Habitat Loss: An ML Approach to Satellite Image Analysis</ProjectP>
                 </ProjectCard>
             </ProjectsWrapper>
         </ProjectContainer>

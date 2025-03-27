@@ -24,6 +24,11 @@ export const Icon = styled(LinkRouter)`
     font-size: 32px;
     cursor: pointer;
 
+
+    &:hover {
+        color: #010606;
+    }
+
     @media screen and (max-width: 480px) {
         top: 10px;
         left: 16px;

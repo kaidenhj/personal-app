@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkRouter} from "react-router-dom";
 
 export const ProjectContainer = styled.div`
     height: 860px;
@@ -36,14 +37,16 @@ export const ProjectsWrapper = styled.div`
     }
 `;
 
-export const ProjectCard = styled.div`
+export const ProjectCard = styled(LinkRouter)`
+    color: #010606;
+    text-decoration: none;
     background: #f9f9f9;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    max-height: 340px;
+    height: 340px;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
@@ -71,7 +74,8 @@ export const ProjectsH1 = styled.h1`
 `;
 
 export const ProjectH2 = styled.h2`
-    color: #f9f9f9;
+    text-align: center;
+    color: #010606;
     font-size: 1rem;
     margin-bottom: 10px;
 `;

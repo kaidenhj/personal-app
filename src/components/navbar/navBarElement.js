@@ -42,7 +42,7 @@ export const NavLogo = styled(LinkScroll)`
     text-decoration: none;
 
     &:hover {
-        font-size: 1.52rem;
+        color: #63d2ff;
     }
 `;
 

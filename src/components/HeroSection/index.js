@@ -1,15 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import Video from '../Videos/video.mp4';
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from "./heroElements";
-import { Button } from "../ButtonElement";
+import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP} from "./heroElements";
 
 const HeroSection = () => {
-
-    const [hover, setHover] = useState(false);
-
-    const onHover = () => {
-        setHover(!hover);
-    };
 
     return (
         <HeroContainer id="home">
@@ -26,11 +19,6 @@ const HeroSection = () => {
                 I am passionate about accessibility for all and environmental conservation.
                 My goal is to use my technical skills to bridge these passions and make a meaningful impact in my career.
                 </HeroP>
-                <HeroBtnWrapper>
-                    <Button to='/thing' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
-                        Learn more {hover ? <ArrowForward /> : <ArrowRight />}
-                    </Button>
-                </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>
     );
