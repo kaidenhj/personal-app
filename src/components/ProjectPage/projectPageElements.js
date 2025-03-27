@@ -52,7 +52,7 @@ export const ProjectIcon = styled.img`
     align-self: center;
     justify-self: center;
     width: 60%;
-    height: 60%;
+    height: 90%;
     margin-bottom: 10px;
 `;
 

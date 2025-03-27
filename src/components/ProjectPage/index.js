@@ -4,7 +4,7 @@ import { ProjectContainer, ProjectH1, ProjectWrapper, ProjectIcon,
     ProjectColumns, Column1, Column2, ProjectList, Item, Icon} from "./projectPageElements";
 import { FaGithub } from 'react-icons/fa';
 
-const ProjectPage = ({lightbg, id, headline, img, description, link, tech, roles, challenges, solutions}) => {
+const ProjectPage = ({lightbg, id, headline, img, description, link, tech, roles, challenges, solutions, tldr}) => {
     return (
         <ProjectContainer lightbg={lightbg} id={id}>
             <Icon to='/'>Kaiden Jones</Icon>
