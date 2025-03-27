@@ -24,7 +24,7 @@ export const homeObjFour = {
     headline: 'Contact',
     description: 'description',
     buttonLabel: 'label',
-    imgStart: true,
+    imgStart: false,
     img: require('../../images/img-1.svg').default,
     alt: 'People sitting on text boxes',
     dark: false,
