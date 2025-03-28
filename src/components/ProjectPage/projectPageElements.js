@@ -5,6 +5,11 @@ import colors from "../../colors";
 export const SocialIconLink = styled.a`
     color: #fff;
     font-size: 24px;
+
+    &:hover{
+        color: ${colors.primary};
+        transition: 0.3s ease-in-out;
+    }
 `;
 
 export const ProjectContainer = styled.div`
@@ -51,6 +56,13 @@ export const ProjectH1 = styled.h1`
     text-align: center;
     margin-top: 80px;
     height: 110px;
+
+        @media screen and (max-width: 768px) {
+        width: 100%; // Full width on mobile
+        padding: 0 10px; // Less padding for mobile
+        font-size: 1.5rem;
+        height: 70px;
+    }
 `;
 
 export const ProjectIcon = styled.img`
