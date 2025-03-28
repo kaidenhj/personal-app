@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ProjectContainer, ProjectH1, ProjectWrapper, ProjectIcon,
     ProjectSection, ProjectH2, ProjectText, ProjectLink, SocialIconLink,
     ProjectColumns, Column1, Column2, ProjectList, Item, Icon, ReturnButton, Button} from "./projectPageElements";
 import { FaGithub } from 'react-icons/fa';
 
 const ProjectPage = ({lightbg, id, headline, img, description, link, tech, roles, challenges, solutions, tldr}) => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     return (
         <ProjectContainer lightbg={lightbg} id={id}>
             <Icon to='/'>Kaiden Jones</Icon>
