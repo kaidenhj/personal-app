@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import colors from '../../colors';
 import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
@@ -42,7 +43,7 @@ export const NavLogo = styled(LinkScroll)`
     text-decoration: none;
 
     &:hover {
-        color: #63d2ff;
+        color: ${colors.primary};
     }
 `;
 
@@ -53,10 +54,10 @@ export const NavSignin = styled.div`
 
 export const NavBtnLink = styled(LinkRouter)`
     border-radius: 50px;
-    background: #63d2ff;
+    background: ${colors.primary};
     white-space: nowrap;
     padding: 10px 22px;
-    color: #010606;
+    color: ${colors.black};
     font-size: 16px;
     outline: none;
     border: none;
@@ -67,7 +68,7 @@ export const NavBtnLink = styled(LinkRouter)`
     &:hover {
         transition: all 0.2s ease-in-out;
         background: #fff;
-        color: #010606;
+        color: ${colors.black};
     }
 
     @media screen and (max-width: 768px){

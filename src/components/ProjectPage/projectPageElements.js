@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link as LinkRouter } from "react-router-dom";
+import colors from "../../colors";
 
 export const SocialIconLink = styled.a`
     color: #fff;
@@ -22,7 +23,8 @@ export const Icon = styled(LinkRouter)`
     cursor: pointer;
     
     &:hover {
-        color: #63d2ff;
+        color: ${colors.primary};
+        transition: 0.3s ease-out;
     }
 
     @media screen and (max-width: 480px) {
@@ -43,11 +45,12 @@ export const ProjectWrapper = styled.div`
 `;
 
 export const ProjectH1 = styled.h1`
-    color: #010606;
-    background: #63d2ff;
+    color: ${colors.black};
+    background: ${colors.primary};
     font-size: 2.5rem;
     text-align: center;
     margin-top: 80px;
+    height: 110px;
 `;
 
 export const ProjectIcon = styled.img`
@@ -70,7 +73,6 @@ export const Column1 = styled.div`
 `;
 
 export const Column2 = styled.div`
-    color: #010606;
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col2;
@@ -87,7 +89,7 @@ export const ProjectSection = styled.div`
 `;
 
 export const ProjectH2 = styled.h2`
-    color: #63d2ff;
+    color: ${colors.primary};
     font-size: 1.5rem;
     margin-bottom: 10px;
 `;
@@ -134,10 +136,10 @@ export const ReturnButton = styled.div`
 
 export const Button = styled(LinkRouter)`
     border-radius: 50px;
-    background: #63d2ff;
+    background: ${colors.primary};
     white-space: nowrap;
     padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
-    color: ${({ dark }) => (dark ? '#010606' : '#010606')};
+    color: ${colors.black};
     font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
     outline: none;
     border: none;
@@ -149,6 +151,6 @@ export const Button = styled(LinkRouter)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: ${({ primary }) => (primary ? '#63d2ff': '#f9f9f9')};
+        background: ${({ primary }) => (primary ? colors.primary: '#fff')};
     }
 `

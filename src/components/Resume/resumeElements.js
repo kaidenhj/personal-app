@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import colors from '../../colors';
 import { Link as LinkRouter } from 'react-router-dom';
 
 export const Container = styled.div`
@@ -26,7 +27,7 @@ export const Icon = styled(LinkRouter)`
 
 
     &:hover {
-        color: #010606;
+        color: ${colors.black};
     }
 
     @media screen and (max-width: 480px) {

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import colors from "../../colors";
 import { Link as LinkRouter} from "react-router-dom";
 
 export const ProjectContainer = styled.div`
@@ -7,7 +8,7 @@ export const ProjectContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #010606;
+    background: ${colors.black};
 
     @media screen and (max-width: 768px) {
         height: 1100px;
@@ -38,9 +39,9 @@ export const ProjectsWrapper = styled.div`
 `;
 
 export const ProjectCard = styled(LinkRouter)`
-    color: #010606;
+    color: ${colors.black};
     text-decoration: none;
-    background: #f9f9f9;
+    background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -65,7 +66,7 @@ export const ProjectIcon = styled.img`
 
 export const ProjectsH1 = styled.h1`
     font-size: 48px;
-    color: #63d2ff;
+    color: ${colors.primary};
     margin-bottom: 64px;
 
         @media screen and (max-width: 480px) {
@@ -75,7 +76,7 @@ export const ProjectsH1 = styled.h1`
 
 export const ProjectH2 = styled.h2`
     text-align: center;
-    color: #010606;
+    color: ${colors.black};
     font-size: 1rem;
     margin-bottom: 10px;
 `;

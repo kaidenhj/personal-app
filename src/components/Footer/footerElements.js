@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import colors from '../../colors';
 import { Link as LinkScroll} from 'react-scroll';
 import { Link as LinkRouter} from 'react-router-dom';
 
 export const FooterContainer = styled.footer`
-    background-color: #101522;
+    background-color: ${colors.black};
 `;
 
 export const FooterWrapper = styled.div`
@@ -63,7 +64,7 @@ export const FooterInternalLink = styled(LinkScroll)`
     cursor: pointer;
 
     &:hover{
-        color: #63d2ff;
+        color: ${colors.primary};
         transition: 0.3s ease-out;
     }
 `;
@@ -76,7 +77,7 @@ export const FooterInternalRoute = styled(LinkRouter)`
     cursor: pointer;
 
     &:hover{
-        color: #63d2ff;
+        color: ${colors.primary};
         transition: 0.3s ease-out;
     }
 `;
@@ -89,7 +90,7 @@ export const FooterExternalLink = styled.a`
     cursor: pointer;
 
     &:hover{
-        color: #63d2ff;
+        color: ${colors.primary};
         transition: 0.3s ease-out;
     }
 `;
@@ -121,6 +122,11 @@ export const SocialLogo = styled(LinkScroll)`
     align-items: center;
     margin-bottom: 16px;
     font-weight: bold;
+
+    &:hover{
+        color: ${colors.primary};
+        transition: 0.3s ease-out;
+    }
 `;
 
 export const WebsiteRights = styled.small`
@@ -138,6 +144,11 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
     color: #fff;
     font-size: 24px;
+    
+    &:hover{
+        color: ${colors.primary};
+        transition: 0.3s ease-out;
+    }
 `;
 
 

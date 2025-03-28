@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link as LinkScroll } from 'react-scroll';
+import colors from '../../colors';
 
 export const Button = styled.nav`
     cursor: pointer;
@@ -51,7 +52,7 @@ export const NavLinks = styled(LinkScroll)`
     };
 
     ${({ active }) => active && `
-        border-bottom: 3px solid #63d2ff;
+        border-bottom: 3px solid ${colors.primary};
         font-weight: bold;
     `}
 `;

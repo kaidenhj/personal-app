@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import colors from '../../colors'
 import { Link as LinkRouter } from 'react-router-dom'
 
 export const Container = styled.div`
@@ -40,7 +41,7 @@ export const Icon = styled(LinkRouter)`
 `;
 
 export const Form = styled.form` 
-        background: #010101;
+        background: ${colors.black};
         max-width: 400px;
         height: auto;
         width: 100%;
@@ -78,7 +79,8 @@ export const FormInput = styled.input`
 `
 
 export const FormButton = styled.button`
-    background: #63d2ff;
+    background: ${colors.primary};
+    display: flex;
     padding: 16px 0;
     border: none;
     border-radius: 4px;

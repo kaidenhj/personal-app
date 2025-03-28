@@ -1,8 +1,10 @@
 import styled from 'styled-components'
+import colors from '../../colors'
 
 export const InfoContainer = styled.div`
     color : #fff;
-    background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
+    background: ${({lightBg}) => (lightBg ? colors.white : colors.black)};
+    display: flex;
     width: 100%;
 
     @media screen and (max-width: 768px) {
@@ -89,7 +91,9 @@ export const FormWrap = styled.div`
 `
 
 export const Form = styled.form` 
-        background: #010101;
+        background: ${colors.black};
+        display: flex;
+        flex-direction: column;
         max-width: 600px;
         height: auto;
         width: 100%;
@@ -135,7 +139,7 @@ export const FormInput = styled.input`
 `
 
 export const FormButton = styled.button`
-    background: #63d2ff;
+    background: ${colors.primary};
     padding: 16px 0;
     border: none;
     border-radius: 4px;
