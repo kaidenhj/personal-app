@@ -15,7 +15,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 960px;
+    height: 980px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
@@ -45,6 +45,10 @@ export const Column1 = styled.div`
     margin-bottom: 10px;
     padding: 0 15px;
     grid-area: col1;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin: 0 auto;
 
     @media screen and (max-width: 768px) {
         width: 100%; // Full width on mobile
@@ -56,19 +60,30 @@ export const Column2 = styled.div`
     margin-bottom: 10px;
     padding: 0 15px;
     grid-area: col2;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin: 0 auto;
 
     @media screen and (max-width: 768px) {
         width: 100%; // Full width on mobile
-        padding: 0 10px; // Less padding for mobile
+        padding: 0 50px; // Less padding for mobile
     }
 `
 
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 10%;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin: 0 auto;
 
     @media screen and (max-width: 768px) {
-        max-width: 100%; // Full width on smaller screens
+        margin-top: 10px;
+        max-width: 30%; // Full width on smaller screens
+        max-height: 30%;
+        justify-content: center;
     }
 `
 

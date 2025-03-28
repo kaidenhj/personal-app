@@ -44,29 +44,37 @@ export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin: 0 auto;
 
     @media screen and (max-width: 768px) {
         width: 100%; // Full width on mobile
         padding: 0 10px; // Less padding for mobile
     }
-`
+`;
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col2;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin: 0 auto;
 
     @media screen and (max-width: 768px) {
         width: 100%; // Full width on mobile
         padding: 0 10px; // Less padding for mobile
     }
-`
+`;
 
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
-`
+`;
 
 export const Heading = styled.h1`
     color: ${colors.primary};
@@ -79,7 +87,7 @@ export const Heading = styled.h1`
     @media screen and (max-width: 480px) {
         font-size: 32px;
     }
-`
+`;
 
 export const SubTitle = styled.p`
     white-space: pre-line;
@@ -107,9 +115,15 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 10%;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin: 0 auto;
 
     @media screen and (max-width: 768px) {
-        max-width: 100%; // Full width on smaller screens
+        max-width: 50%; // Full width on smaller screens
+        max-height: 50%;
+        justify-content: center;
     }
 `
 
