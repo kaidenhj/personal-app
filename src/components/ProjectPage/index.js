@@ -10,7 +10,7 @@ const ProjectPage = ({lightbg, id, headline, img, description, link, tech, roles
             <Icon to='/'>Kaiden Jones</Icon>
             <ProjectWrapper>
                 <ProjectH1>{headline}</ProjectH1>
-                <ProjectIcon src={img} />
+                <ProjectIcon src={img} /> 
                 <ProjectSection>
                     <ProjectH2>TLDR:</ProjectH2>
                     <ProjectText>{tldr}</ProjectText>
