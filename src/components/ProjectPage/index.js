@@ -1,7 +1,7 @@
 import React from "react";
 import { ProjectContainer, ProjectH1, ProjectWrapper, ProjectIcon,
     ProjectSection, ProjectH2, ProjectText, ProjectLink, SocialIconLink,
-    ProjectColumns, Column1, Column2, ProjectList, Item, Icon} from "./projectPageElements";
+    ProjectColumns, Column1, Column2, ProjectList, Item, Icon, ReturnButton, Button} from "./projectPageElements";
 import { FaGithub } from 'react-icons/fa';
 
 const ProjectPage = ({lightbg, id, headline, img, description, link, tech, roles, challenges, solutions, tldr}) => {
@@ -50,6 +50,9 @@ const ProjectPage = ({lightbg, id, headline, img, description, link, tech, roles
                     <ProjectH2>Solutions:</ProjectH2>
                     <ProjectText>{solutions}</ProjectText>
                 </ProjectSection>
+                <ReturnButton>
+                    <Button onClick={() => window.history.back()}>Return Home</Button>
+                </ReturnButton>
             </ProjectWrapper>
         </ProjectContainer>
     );

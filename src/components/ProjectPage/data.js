@@ -11,7 +11,7 @@ export const projectObjOne = {
     roles: ["Developer", "Designer", "Researcher"],
     tldr: "Developed a system for Ithaca College's Facilities department to manage campus utilities. Features included an PDF scraper, a database, and a Google Drive UI for document access.",
     link: "https://github.com/mjstevens33/Pro-IC-Energy",
-    img: require('../../images/img-1.svg'),
+    img: require('../../images/utilities-img.jpg'),
     alt: 'Person working on a laptop with graphics behind them',
     dark: false,
     primary: false,

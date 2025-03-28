@@ -43,6 +43,8 @@ export const ProjectWrapper = styled.div`
 `;
 
 export const ProjectH1 = styled.h1`
+    color: #010606;
+    background: #63d2ff;
     font-size: 2.5rem;
     text-align: center;
     margin-top: 80px;
@@ -68,6 +70,7 @@ export const Column1 = styled.div`
 `;
 
 export const Column2 = styled.div`
+    color: #010606;
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col2;
@@ -84,6 +87,7 @@ export const ProjectSection = styled.div`
 `;
 
 export const ProjectH2 = styled.h2`
+    color: #63d2ff;
     font-size: 1.5rem;
     margin-bottom: 10px;
 `;
@@ -119,4 +123,32 @@ export const Item = styled.li`
     margin-bottom: 10px;
 `;
 
+export const ReturnButton = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    text-align: center;
+`
 
+export const Button = styled(LinkRouter)`
+    border-radius: 50px;
+    background: #63d2ff;
+    white-space: nowrap;
+    padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
+    color: ${({ dark }) => (dark ? '#010606' : '#010606')};
+    font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
+    outline: none;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: ${({ primary }) => (primary ? '#63d2ff': '#f9f9f9')};
+    }
+`
